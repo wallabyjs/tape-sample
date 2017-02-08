@@ -16,6 +16,8 @@ module.exports = function (wallaby) {
       runner: 'node'
     },
 
+    workers: {recycle: true},
+
     compilers: {
       '**/*.js': wallaby.compilers.babel()
     },
